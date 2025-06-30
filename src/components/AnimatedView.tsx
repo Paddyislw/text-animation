@@ -23,7 +23,7 @@ export default function AnimationView({
   onSpeedChange,
 }: AnimationViewProps) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const animationFrameRef = useRef<number>()
+  const animationFrameRef = useRef<number | null>(null)
   const [hoveredId, setHoveredId] = useState<string | null>(null)
   const [showControls, setShowControls] = useState(false)
 
